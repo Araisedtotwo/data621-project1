@@ -1,0 +1,42 @@
+---
+title: "DATA621 Project1"
+author: "Arushi Arora"
+date: "9/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Import libraries
+library(tidyverse)
+library(stringr)
+```
+
+
+### Data Exploration
+
+
+```{r}
+
+### Read the Training and Evaluatiing csv files from GitHub
+
+train <- read.csv("https://raw.githubusercontent.com/Araisedtotwo/data621-project1/moneyball-training-data.csv", header = TRUE) %>%
+  as_tibble() %>%
+  print()
+# obs and 5 vars
+
+
+summary()
+```
+
+### Data Preparation
+
+You can also embed plots, for example:
+
+```{r , echo=FALSE}
+plot()
+```
+
